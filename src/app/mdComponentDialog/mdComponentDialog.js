@@ -70,8 +70,9 @@
                 '<md-dialog-content class="sticky-container">' +
                     '<md-toolbar>' +
                         '<div class="md-toolbar-tools">' +
-                            '<h2>{{dialogVm.title}}<h2>' +
-                            '<span flex"></span>' +
+                            '<h2>{{dialogVm.title}}</h2>' +
+                            '<span flex></span>' +
+                            '<md-button class="md-icon-button" ng-click="dialogVm.cancel()"><md-icon class="material-icons">close</md-icon></md-button>' +
                         '</div>' +
                     '</md-toolbar>' +
                     
