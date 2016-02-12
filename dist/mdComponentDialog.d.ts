@@ -1,5 +1,5 @@
 // Type definitions for mdComponentDialog
-// Project: https://github.com/Abrissirba/mdComponentDialog.git
+// Project: https://github.com/mdComponentDialog/mdComponentDialog
 // Definitions by: Marcus Abrahamsson <https://github.com/abrissirba>
 
 /// <reference path="../angularjs/angular.d.ts" />
