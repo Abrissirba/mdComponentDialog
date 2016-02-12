@@ -1,15 +1,38 @@
 {
-  "name": "md-component-dialog",
-  "dependencies": {
-    "ng-include-component": "^0.0.2",
-    "angular-material": "~1",
-    "angular": "~1.5"
-  },
-  "devDependencies": {
-    "angular-route": "~1.5",
-    "angular-mocks": "~1.5"
-  },
-  "resolutions": {
-    "angular": "~1.5"
-  }
+    "name": "md-component-dialog",
+    "description": "An extension to angular materials dialog service. Makes it possible to use the dialog service with a directive instead of a controller-template.",
+    "main": [
+        "./dist/mdComponentDialog.js"
+    ],
+    "authors": [
+        "Marcus Abrahamsson <marcus.abrahamsson13@gmail.com>"
+    ],
+    "dependencies": {
+        "ng-include-component": "^0.0.2",
+        "angular-material": "~1",
+        "angular": "~1.5"
+    },
+    "devDependencies": {
+        "angular-route": "~1.5",
+        "angular-mocks": "~1.5"
+    },
+    "resolutions": {
+        "angular": "~1.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Abrissirba/mdComponentDialog.git"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "karma.conf.js",
+        "package.json",
+        "protractor.conf.js",
+        "gulp",
+        "e2e",
+        "dist-dev",
+        "gulpfile.js"
+    ]
 }
