@@ -5,9 +5,9 @@
     .module('abrissirba.mdComponentDialog', [
         'abrissirba.includeComponent', 
         'ngMaterial'])
-    .run(['$templateCache', run])
-    .controller('mdAbrisComponentDialogController', ['$scope', '$mdDialog', 'componentName', 'params', 'title', mdComponentDialogController])
-    .decorator('$mdDialog', ['$delegate', mdDialogDecorator]);
+    .run(run)
+    .controller('mdAbrisComponentDialogController', mdComponentDialogController)
+    .decorator('$mdDialog', mdDialogDecorator);
 
     function mdDialogDecorator($delegate) {
         
@@ -29,11 +29,12 @@
         }
         return $delegate;
     }
+    mdDialogDecorator.$inject = ['$delegate'];
 
     function run($templateCache){
         $templateCache.put('mdAbrisComponentDialog', mdComponentDialogController.template);
     }
-
+    run.$inject = ['$templateCache'];
 
     function mdComponentDialogController($mdDialog, componentName, params, title){
         var vm = this;
@@ -65,6 +66,7 @@
             $mdDialog.cancel(arguments);
         }
     }
+    mdComponentDialogController.$inject = ['$mdDialog', 'componentName', 'params', 'title'];
     
     mdComponentDialogController.template = '<md-dialog flex="66">' +
                 '<md-dialog-content class="sticky-container">' +
