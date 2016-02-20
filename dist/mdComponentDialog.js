@@ -68,8 +68,8 @@
     }
     mdComponentDialogController.$inject = ['$mdDialog', 'componentName', 'params', 'title'];
     
-    mdComponentDialogController.template = '<md-dialog flex="66">' +
-                '<md-dialog-content class="sticky-container">' +
+    mdComponentDialogController.template = '<md-dialog>' +
+                '<md-dialog-content class="sticky-container" layout="column">' +
                     '<md-toolbar>' +
                         '<div class="md-toolbar-tools">' +
                             '<h2>{{dialogVm.title}}</h2>' +
@@ -78,7 +78,7 @@
                         '</div>' +
                     '</md-toolbar>' +
                     
-                    '<md-content layout-padding>' +
+                    '<md-content flex layout-padding>' +
                         '<ng-include-component name="dialogVm.componentName" params="dialogVm.paramDefinitions" scope="dialogVm"></ng-include-component>' +
                     '</md-content>' +
                     
