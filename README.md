@@ -12,7 +12,7 @@ bower install md-component-dialog --save
 ```
 
 ```
-var app = angular.module('app', ['abrisssirba.mdComponentDialog']);
+var app = angular.module('app', ['abrissirba.mdComponentDialog']);
 ```
 
 ## Example
