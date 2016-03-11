@@ -13,6 +13,7 @@
               user: '=',
               onOk: '=?',
               onCancel: '=?',
+              dialogFns: '=?'
           },
           templateUrl: 'app/components/user.html',
           link: function (scope) {
@@ -21,6 +22,11 @@
                   if(scope.onOk){
                       scope.onOk();
                   }
+              }
+              
+              scope.dialogFns.save = function() {
+                  console.log("save");
+                  scope.ok();
               }
           }
       }

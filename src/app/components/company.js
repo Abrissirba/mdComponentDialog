@@ -3,14 +3,15 @@
 
   angular
     .module('angularMdComponentDialog')
-    .directive('abrisCompany', User);
+    .directive('abrisCompany', Company);
 
   /** @ngInject */
-  function User() {
+  function Company() {
       
       return {
           scope: {
-              company: '='
+              company: '=',
+              dialogFns: '=?'
           },
           templateUrl: 'app/components/company.html'
       }

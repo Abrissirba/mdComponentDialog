@@ -19,6 +19,10 @@
                     country: 'Sweden'
                 }
             },
+            toolbarActions: [{
+                title: 'SAVE',
+                fnName: 'save' 
+            }],
             title: 'User',
             clickOutsideToClose: true
         }).then(function(res){
@@ -37,6 +41,10 @@
                     country: 'Sweden'
                 }
             },
+            toolbarActions: [{
+                title: 'SAVE',
+                fnName: 'save'  
+            }],
             title: 'Company',
             clickOutsideToClose: true
         }).then(function(res){
@@ -54,6 +62,13 @@
                     deadline: new Date()
                 }
             },
+            toolbarActions: [{
+                title: 'EDIT',
+                fnName: 'edit'  
+            }, {
+                title: 'SAVE',
+                fnName: 'save'  
+            }],
             title: 'Project',
             clickOutsideToClose: true
         }).then(function(res){
